@@ -1,0 +1,5 @@
+package com.cts.spring.springcoreadvanced.autowiring.assignment;
+
+public class Reservation {
+
+}

@@ -1,0 +1,27 @@
+package com.cts.spring.springjdbc.employee.impl;
+
+import org.springframework.jdbc.core.JdbcTemplate;
+
+import com.cts.spring.springjdbc.employee.dao.EmployeeDAO;
+import com.cts.spring.springjdbc.employee.dto.Employee;
+
+public class EmployeeDAOImpl implements EmployeeDAO {
+	private JdbcTemplate jdbcTemplate;
+
+	@Override
+	public int create(Employee employee) {
+//		String sql = "insert into employee values(?,?,?)";
+		String sql = "update employee set firstname=?,lastname=? where id=?";
+		int result = jdbcTemplate.update(sql, employee.getId(), employee.getFirstname(), employee.getLastname());
+		return result;
+	}
+
+	public JdbcTemplate getJdbcTemplate() {
+		return jdbcTemplate;
+	}
+
+	public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {
+		this.jdbcTemplate = jdbcTemplate;
+	}
+
+}

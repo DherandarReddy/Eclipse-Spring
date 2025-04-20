@@ -1,0 +1,14 @@
+package com.cts.spring.springcore.constructorInjection;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class ciTest {
+
+	public static void main(String[] args) {
+		ApplicationContext cnt=new ClassPathXmlApplicationContext("com/cts/spring/springcore/constructorInjection/cinjconfig.xml");
+		Employee a=(Employee)cnt.getBean("Employee");
+		System.out.println(a);
+	}
+
+}

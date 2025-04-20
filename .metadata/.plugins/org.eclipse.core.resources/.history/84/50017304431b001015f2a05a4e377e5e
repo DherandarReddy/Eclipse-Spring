@@ -1,0 +1,14 @@
+package com.cts.spring.springcoreadvanced.injecting.interfaces;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class infinjTest {
+
+	public static void main(String[] args) {
+		ApplicationContext cnt=new ClassPathXmlApplicationContext("com/cts/spring/springcoreadvanced/injecting/interfaces/autoconfig.xml");
+		OrderBOImpl bean = (OrderBOImpl) cnt.getBean("bo");
+		System.out.println(bean);
+	}
+
+}

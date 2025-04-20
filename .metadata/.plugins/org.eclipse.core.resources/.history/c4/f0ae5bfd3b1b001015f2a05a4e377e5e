@@ -1,0 +1,28 @@
+package com.cts.spring.springcoreadvanced.stereotype.annotations;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Professor {
+	@Value("10");
+	private int id;
+	@Value("Deeru")
+	private String name;
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	@Override
+	public String toString() {
+		return "Professor [id=" + id + ", name=" + name + "]";
+	}
+	
+}

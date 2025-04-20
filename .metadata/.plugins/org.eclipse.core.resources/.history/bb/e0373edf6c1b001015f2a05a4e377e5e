@@ -1,0 +1,5 @@
+package com.cts.spring.springjdbc.employee.dao;
+
+public interface EmployeeDAO {
+
+}

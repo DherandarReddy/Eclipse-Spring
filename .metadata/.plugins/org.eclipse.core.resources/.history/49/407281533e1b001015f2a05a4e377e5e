@@ -1,0 +1,9 @@
+package com.cts.spring.springcoreadvanced.stereotype.annotations;
+
+@Component
+public class Profile {
+	@Value("Ram")
+private String name;
+	@Value("xyz")
+private String company;
+}

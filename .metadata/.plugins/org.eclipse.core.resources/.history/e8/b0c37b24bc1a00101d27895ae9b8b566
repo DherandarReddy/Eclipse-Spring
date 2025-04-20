@@ -1,0 +1,5 @@
+package com.cts.spring.springcoreadvanced.stereotype;
+
+public class Professor {
+
+}

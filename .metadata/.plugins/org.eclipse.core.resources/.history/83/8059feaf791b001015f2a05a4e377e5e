@@ -1,0 +1,28 @@
+package com.cts.spring.springjdbc.employee.test;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.cts.spring.springjdbc.employee.dao.EmployeeDAO;
+import com.cts.spring.springjdbc.employee.dto.Employee;
+
+public class Test {
+
+	public static void main(String[] args) {
+		ApplicationContext cnt = new ClassPathXmlApplicationContext(
+				"com/cts/spring/springjdbc/employee/test/autoconfig.xml");
+		EmployeeDAO dao = (EmployeeDAO) cnt.getBean("employeedaoimpl");
+//		Employee employee = new Employee();
+//		employee.setId(3);
+//		employee.setFirstname("Rafi");
+//		employee.setLastname("remo");
+//		int result = dao.create(employee);
+//		int result =dao.update(employee);
+//		int result = dao.delete(3);
+//		System.out.println("no of records updated :" + result);
+//		Employee employee2 = dao.read(1);
+		Employee employee3= (Employee) dao.read();
+		System.out.println("Employee : "+employee2);
+	}
+
+}

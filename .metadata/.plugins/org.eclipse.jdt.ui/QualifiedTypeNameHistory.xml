@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="javax.annotation.PostConstruct"/>
+    <fullyQualifiedTypeName name="javax.annotation.PreDestroy"/>
+    <fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="com.cts.spring.springcoreadvanced.injecting.interfaces.OrderBOImpl"/>
+    <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
+    <fullyQualifiedTypeName name="com.cts.spring.springjdbc.employee.dto.Employee"/>
+    <fullyQualifiedTypeName name="com.cts.spring.springjdbc.employee.dao.rowmapper.EmployeeRowMapper"/>
+</qualifiedTypeNameHistroy>

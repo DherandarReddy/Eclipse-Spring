@@ -1,0 +1,14 @@
+package com.cts.spring.springjdbc.employee.impl;
+
+import com.cts.spring.springjdbc.employee.dao.EmployeeDAO;
+import com.cts.spring.springjdbc.employee.dto.Employee;
+
+public class EmployeeDAOImpl implements EmployeeDAO{
+
+	@Override
+	public int create(Employee employee) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

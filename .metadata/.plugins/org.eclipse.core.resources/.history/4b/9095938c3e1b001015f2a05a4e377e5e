@@ -1,0 +1,54 @@
+package com.cts.spring.springcoreadvanced.stereotype.annotations;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component
+public class Professor {
+	// primitive type injection
+	@Value("10")
+	private int id;
+	@Value("Deeru")
+	private String name;
+
+	// collection type injection
+	@Value("#{topics}")
+	private List<String> topics;
+
+	// object type injection
+	private Profile profile;
+
+	public List<String> getTopics() {
+		return topics;
+	}
+
+	public void setTopics(List<String> topics) {
+		this.topics = topics;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	@Override
+	public String toString() {
+		return "Professor [id=" + id + ", name=" + name + ", topics=" + topics + ", profile=" + profile + "]";
+	}
+
+	
+
+}

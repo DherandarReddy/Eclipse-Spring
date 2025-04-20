@@ -1,0 +1,14 @@
+package com.cts.spring.springcoreadvanced.stereotype.annotations;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class autoTest {
+
+	public static void main(String[] args) {
+		ApplicationContext cnt=new ClassPathXmlApplicationContext("com/cts/spring/springcoreadvanced/stereotype/annotations/autoconfig.xml");
+		Professor a=(Professor)cnt.getBean("professor");
+		System.out.println(a);
+	}
+
+}

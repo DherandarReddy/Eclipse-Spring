@@ -1,0 +1,5 @@
+package com.cts.spring.springcoreadvanced.stereotype.annotations;
+
+public class Professor {
+
+}

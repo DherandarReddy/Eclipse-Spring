@@ -1,0 +1,5 @@
+package com.cts.spring.springjdbc.employee.dto;
+
+public class Employee {
+
+}

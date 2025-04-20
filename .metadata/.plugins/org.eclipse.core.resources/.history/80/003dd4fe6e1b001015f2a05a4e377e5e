@@ -1,0 +1,7 @@
+package com.cts.spring.springjdbc.employee.impl;
+
+import com.cts.spring.springjdbc.employee.dao.EmployeeDAO;
+
+public class EmployeeDAOImpl implements EmployeeDAO{
+
+}
